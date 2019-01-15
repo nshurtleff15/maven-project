@@ -21,7 +21,7 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
 	</spring:beans>
 	
 	<http:listener-config host="localhost" name="httpList"
-		port="18081" doc:name="HTTP Listener Configuration" />
+		port="${http.port}" doc:name="HTTP Listener Configuration" />
 	
 	<db:derby-config name="Derby_Configuration"
 		url="jdbc:derby:memory:muleEmbeddedDB;create=true" doc:name="Derby Configuration" />

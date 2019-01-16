@@ -20,7 +20,7 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
 			class="com.mulesoft.training.Database" />
 	</spring:beans>
 	
-	<http:listener-config host="localhost" name="httpList"
+	<http:listener-config host="0.0.0.0" name="httpList"
 		port="${http.port}" doc:name="HTTP Listener Configuration" />
 	
 	<db:derby-config name="Derby_Configuration"
